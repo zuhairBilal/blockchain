@@ -1,0 +1,9 @@
+<!--<mat-toolbar color="primary">Charity Chain</mat-toolbar>-->
+<mat-toolbar color="primary" class="heading"><img src="assets/favicon.ico"> Charity Chain
+<button mat-button></button>
+  <a routerLink="register"><button class="btn btn-success pull-right" (click)="reloadPage()" mat-flat-button color="primary">Register</button></a>
+  <a routerLink="donation"><button class="btn btn-success pull-right" (click)="reloadPage()" mat-flat-button color="primary">Donation</button></a>
+  <a routerLink="profile"><button class="btn btn-success pull-right" (click)="reloadPage()" mat-flat-button color="primary">Profile</button></a>
+  <a routerLink="reqtoken"><button class="btn btn-success pull-right" (click)="reloadPage()" mat-flat-button color="primary">Request Token</button></a>
+  <!--<app-meta-sender></app-meta-sender>--></mat-toolbar>
+<router-outlet></router-outlet>

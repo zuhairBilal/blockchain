@@ -1,0 +1,25 @@
+<div *ngIf="charityList.length>0">
+<h1>List of Charity Organisations</h1>
+<h4>You'll get their address and their current fund from below.Glad you are here to help us</h4>
+</div>
+<!-- Displaying all the charity list details-->
+<mat-accordion class="tabletop" *ngFor="let element of charityList">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{ element[0] }} Charity Organisation
+        </mat-panel-title>
+        <mat-panel-description>
+         More Details
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <mat-form-field class="address-full-width">
+        <input matInput placeholder="Address" value="{{ element[5] }}" readonly="readonly">
+      </mat-form-field>
+  
+      <mat-form-field class="address-full-width">
+        <input matInput placeholder="Balance HHC" value="{{ element[4] }}" readonly="readonly">
+      </mat-form-field>
+    </mat-expansion-panel>
+</mat-accordion>

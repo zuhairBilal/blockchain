@@ -1,0 +1,6 @@
+Deployed in Rinkeby test network
+--------------------------------
+
+Contract Address : 0x243755cDc26D3b6320C52a2464Ce29bf7dAbbCca
+
+Etherscan link : https://rinkeby.etherscan.io/tx/0xe6ee58e73ac81d6deb6642d564c8d8852279175695bfb2305e694b2bdf2174e3

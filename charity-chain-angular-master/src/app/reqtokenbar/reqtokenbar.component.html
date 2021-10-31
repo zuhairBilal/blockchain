@@ -1,0 +1,37 @@
+<mat-card class="address-card">
+  <mat-card-header class="spread-text">Request for your HelpingHand Tokens Here...</mat-card-header>
+  <mat-card-content>
+  <!--  <form class="address-form">-->
+      <mat-form-field class="address-full-width">
+        <input type="text" matInput id="tokenInput" placeholder="Token amount" (change)="setToken($event)">
+      </mat-form-field>
+      <button mat-raised-button color="primary" id="send" (click)="reqToken()">Request</button>
+    </mat-card-content>
+  </mat-card>
+  <!-- Only print this part if logged in user is the Owner of the contract-->
+  <div *ngIf="model.account == owner" >
+    <h4>Pending token requests</h4>
+    <!-- Printing the token request in list from arrayJson array-->
+  <mat-accordion class="tabletop" *ngFor="let element of arrayJson">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{ element }} HHC Token Request
+        </mat-panel-title>
+        <mat-panel-description>
+         More Details
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <mat-form-field class="address-full-width">
+        <input matInput placeholder="Address" value="{{ element[1] }}" readonly="readonly">
+      </mat-form-field>
+  
+      <mat-form-field class="address-full-width">
+        <input matInput placeholder="Requested HHC" value="{{ element }}" readonly="readonly">
+      </mat-form-field>
+      <button mat-raised-button color="primary" id="send" (click)="accept(element[1])">Approve</button><div class="divider"></div>
+      <button mat-raised-button color="warn" id="send" (click)="reject(element[1])">Reject</button>
+    </mat-expansion-panel>
+</mat-accordion>
+</div>

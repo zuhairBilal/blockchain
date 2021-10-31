@@ -1,0 +1,27 @@
+.address-field {
+    width: 400px;
+  }
+  .address-form {
+    min-width: 150px;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .address-full-width {
+    width: 100%;
+  }
+  
+  .address-card {
+    max-width: 100%;
+  }
+  
+  .spread-text {
+    text-align: center;
+  }
+
+  .divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
+  

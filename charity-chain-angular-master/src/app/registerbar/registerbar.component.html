@@ -1,0 +1,42 @@
+<!--<mat-card class="address-card">
+  <mat-card-content>
+    <mat-form-field id="address-selector" class="address-field">
+      <mat-select name="account" (selectionChange)="refreshBalance()" [(value)]="model.account" placeholder="Address">
+        <mat-option *ngFor="let account of accounts" [value]="account">{{account}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <p>You are having <span id="balance">{{model.balance}}</span> HHC</p>
+  </mat-card-content>
+</mat-card>-->
+<mat-card class="address-card">
+  <mat-card-header class="spread-text">Join with us to help Charities all around the world</mat-card-header>
+  <mat-card-content>
+  <!--  <form class="address-form">-->
+      <mat-form-field class="address-full-width">
+        <input type="text" matInput id="nameInput" placeholder="Name" (change)="setName($event)">
+      </mat-form-field>
+      <mat-form-field class="address-full-width">
+        <input type="text" matInput id="emailInput" placeholder="Email" (change)="setEmail($event)">
+      </mat-form-field>
+      <mat-form-field class="address-full-width">
+          <select matNativeControl required placeholder="Address">
+              <option id="typeInput1" value="person">{{model.account}}</option>
+            </select>
+        </mat-form-field>
+      <mat-form-field class="address-full-width">
+        <input type="text" matInput id="passwordInput" placeholder="Password" type="password" (change)="setPassword($event)">
+        <!--(change)="setPassword($event)"-->
+      </mat-form-field>
+      <mat-form-field class="address-full-width">
+        <select matNativeControl required (change)="setType($event)" placeholder="I am a">
+          <option id="person" value="1">Person</option>
+          <option id="charity" value="2">Charity-Organisation</option>
+          <option id="vendor" value="3">Authorized vendor</option>
+        </select>
+      </mat-form-field>
+    <button mat-raised-button color="primary" id="send" (click)="registerHHC()">Register</button>
+    <!--</form>-->
+  </mat-card-content>
+</mat-card>
+
+
