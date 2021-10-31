@@ -21,9 +21,8 @@ Steps to install the application and use.
     - git init
 
 4.Clone the application from our repository :
-    - git clone https://gitlab.com/akshaysrinivas/charity-chain-angular
-
-5.Open the folder :
+   
+ 5.Open the folder :
     - cd charity-chain-angular
 
 6.Install node_modules :
@@ -54,7 +53,4 @@ Steps to install the application and use.
 15.Open browser :
     - https://localhost:4200
     
-The Installation & Working Demo can be viewd in the youtube video linked below,
-
-    - https://youtu.be/K763uQVgYAc
 
